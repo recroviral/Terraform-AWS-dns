@@ -38,3 +38,4 @@ Create main.tf.json file as use module for AWS Route53 Records
     }
 }
 ```
+Note: You will need to create provider.tf
