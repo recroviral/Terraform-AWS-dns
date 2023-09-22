@@ -7,8 +7,8 @@ Create main.tf.json file as use module for AWS Route53 Records
 {
   "module": {
     "dns_name": {
-      "source": "VIRALPATEL-SPS/route53-record/aws",
-      "version": "1.0.0",
+      "source": "recroviral/route53-record/aws"
+      "version": "1.0.1"
       "zone_id": "ZoneID",
       "records_alias": [
         {
