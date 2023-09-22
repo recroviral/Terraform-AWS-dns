@@ -5,6 +5,7 @@ provider "aws" {
 locals {
   zone_id = var.zone_id
 }
+
 resource "aws_route53_record" "dns_records" {
   count = length(var.records)
   zone_id = local.zone_id
