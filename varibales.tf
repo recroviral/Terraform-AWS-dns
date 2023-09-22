@@ -4,22 +4,22 @@ variable "zone_id" {
 
 variable "records" {
   type = list(object({
-    name = string
-    type = string
-    ttl = number
-    value = list(string)
+    Name  = string
+    Type  = string
+    TTL   = number
+    Value = list(string)
   }))
   default = []
 }
 
 variable "records_alias" {
   type = list(object({
-    name = string
-    type = string
+    Name  = string
+    Type  = string
     alias = object({
-      name = string
-      zone_id = string
-      evaluate_target_health = string
+      DNSName              = string
+      HostedZoneId         = string
+      EvaluateTargetHealth = string
     })
   }))
   default = []
